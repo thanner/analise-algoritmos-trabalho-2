@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-class Uri1931 {
+public class Uri1931 {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("./example/uri1931.txt");
         Scanner s = new Scanner(file);

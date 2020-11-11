@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Uri1055 {
+public class Uri1055 {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("./example/uri1055.txt");
         Scanner s = new Scanner(file);
