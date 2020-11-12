@@ -29,7 +29,7 @@ public class Uri1931 {
             }
         }
 
-        System.out.println(sb.toString());
+        System.out.print(sb.toString());
     }
 
     private static int getCustoPedagios(PedagioCidades[] pedagioCidades, int cidadeDestino) {

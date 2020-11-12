@@ -27,7 +27,7 @@ public class Uri1055 {
             }
         }
 
-        System.out.println(sb.toString());
+        System.out.print(sb.toString());
     }
 
     private static int getEllegantSwap(int[] numeros) {
