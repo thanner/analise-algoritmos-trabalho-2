@@ -1,21 +1,20 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+package Uri1682;
+
 import java.util.Scanner;
 
-public class Uri1682 {
+public class Main {
     private static final char[] acoes = {'N', 'O', 'P'};
-    private static char[] codigoGenetico;
+    private static final int tamanho_max = 5000;
+    private static final char[] codigoGenetico = new char[tamanho_max];
 
-    public static void main(String[] args) throws FileNotFoundException {
-        Scanner s = new Scanner(new File("./example/uri1682.txt"));
-//        Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        ENCONTRA_CODIGO(-1, tamanho_max);
 
         int tamanho = s.nextInt();
         while (tamanho != 0) {
-            codigoGenetico = new char[tamanho];
-            ENCONTRA_CODIGO(-1, tamanho);
-
-            System.out.println(codigoGenetico);
+            System.out.println(new String(codigoGenetico, 0, tamanho));
             tamanho = s.nextInt();
         }
     }
